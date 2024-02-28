@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.colores {
+    color: #07020D;
+    color: #5DB7DE;
+    color: #F1E9DB;
+    color: #A39B8B;
+    color: #716A5C;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #F1E9DB;
+    
+    text-align: center;
+    color: #07020D;
+    margin: 0;
+}
+
+section {
+    width: min(1200px, 100%); /* ¿Cuál es el valor mínimo? */
+    margin: 25px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+li {
+    padding: 8px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin:0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin:0;
+}
+
+/* Header y barra de navegación */
+header {
+    background-color: #07020D;
+}
+
+/* Links */
+/* Reposo */
+a:link {
+    text-decoration: none;
+    color: #F1E9DB;
+}
+
+/* Visitado */
+a:visited {
+    color: #F1E9DB;
+}
+
+/* Hover / Cuando pasamos por encima del link con el cursor del mouse. */
+a:hover {
+    color:#5DB7DE
+}
+
+/* Active / Cuando activamos el link */
+a:active {
+    color:#5DB7DE
+}
+
+.contenedor-header {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    width: min(1200px, 100%);
+    margin: 0 auto;
+}
+
+
+/* Sección bienvenida */
+#bienvenida {
+    height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+
+    background-image: url('../img/bienvenida.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#bienvenida h1 {
+    color: #F1E9DB;
+    background-color: #07020dd2;
+    padding: 32px;
+}
+    
+
+
+/* Novedades */
+.contenedor {
+    display: flex;
+    gap: 32px 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contenedor > article > img {
+    width: 100%;
+}
+
+article {
+    width: 247px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+/* Links para novedades */
+a.link-novedades:link,
+a.link-novedades:visited {
+    text-decoration: none;
+    background-color: white;
+    color: #07020D;
+    display: block;
+    padding: 16px;
+    border: 2px solid #5DB7DE; /* grosor estilo color */
+    border-radius: 8px;
+}
+
+a.link-novedades:hover,
+a.link-novedades:active {
+    background-color: #5DB7DE;
+    font-weight: 600;
+}
+
+
+/* Footer */
+footer {
+    background-color: #716A5C;
+    padding: 45px 8px;
+}
+
+
+
+
+/* Formularios */
+
+/* Formulario del buscador */
+/* Botón con icono de Material Symbols */
+.buscador {
+    background-color: #ffffff00;
+    border: 3px solid #5DB7DE;
+    color: #5DB7DE;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.material-symbols-outlined {
+    font-size: 32px; /* Sobre escribimos el tamaño del icono */
+}
+
+.boton {
+    background-color: #ffffff00;
+    border: 3px solid #5DB7DE;
+    color: #5DB7DE;
+    font-size: 16px;
+    font-family: inherit;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: #5DB7DE;
+    color: #07020D;
+    cursor: pointer;
+}
+
+.form-buscador input {
+    background-color: #F1E9DB;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 4px 8px;
+    border: 3px solid #f1e9db00;
+    border-radius: 8px;
+}
+
+.form-buscador input:focus {
+    outline: 2px solid #5DB7DE;
+    outline-offset: -2px;
+}
+
+.form-buscador {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Formulario de ingreso */
+#ingreso form,
+#registro form,
+#contacto form {
+    width: 350px;
+    margin: 0 auto;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.input {
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    background-color: #ded9ce;
+    border: none;
+    border-bottom: 2px solid #716A5C;
+    
+    color: #07020D;
+
+}
+
+.input:focus {
+    /* outline: 3px solid #5DB7DE;
+    outline-offset: 3px; */
+    outline: none;
+    border-bottom: 2px solid #5DB7DE;
+}
+
+textarea {
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    background-color: #ded9ce;
+    border: none;
+    border-bottom: 2px solid #716A5C;
+    
+    color: #07020D;
+
+    min-height: 250px;
+}
+
+textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #5DB7DE;
+}
+
+select {
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    background-color: #ded9ce;
+    border: 2px solid #716A5C;
+    
+    color: #07020D;
+
+}
+
+select:focus {
+    /* outline: 3px solid #5DB7DE;
+    outline-offset: 3px; */
+    outline: none;
+    border: 2px solid #5DB7DE;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #5DB7DE;
+    border: none;
+    
+    color: #07020D;
+}
+
+a.form:link,
+a.form:visited {
+    color: #07020D;
+}
+
+a.form:hover,
+a.form:active {
+    color: #5DB7DE;
+}

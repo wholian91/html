@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Librería | Tienda online de libros</title>
+    
+    <!-- Instalamos los iconos de material symbols, la hoja de estilos la colocamos antes que la nuestra, para poder sobreescribir sus propiedades.-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body>
+
+    <header id="header">
+        <div class="contenedor-header">
+            <img src="img/logo.svg" alt="Bienvenidos a La Librería">
+        
+            <nav>
+                <ul>
+                    <li><a href="">Catálogo</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="">Log in</a></li>
+                </ul>            
+            </nav>
+    
+            <form class="form-buscador" action="index.html" method="GET" enctype="text/plain">
+                <input type="text" name="busqueda" value="" placeholder="¿Qué te gustaría leer hoy?">
+                <!-- <button class="boton">Buscar</button> -->
+    
+                <button class="buscador"><span class="material-symbols-outlined">search</span></button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section id="bienvenida">
+            <h1>Bienvenidos a La Librería</h1>
+        </section>
+
+        <section id="novedades">
+            <h1>Novedades</h1>
+
+            <div class="contenedor">
+                <article>
+                    <img src="img/01.jpg" alt="Portada del libro: H.P. Lovecraft Obras Completas">
+                    <h2>H.P. Lovecraft</h2>
+                    <h3>H.P. Lovecraft Obras Completas</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+
+                <article>
+                    <img src="img/02.jpg" alt="Portada del libro: Las Crónicas Completas de Conan">
+                    <h2>Robert E. Howard</h2>
+                    <h3>Las Crónicas Completas de Conan</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+
+                <article>
+                    <img src="img/03.jpg" alt="Portada del libro: Los Hijos de Húrin">
+                    <h2>J.R.R. Tolkien</h2>
+                    <h3>Los Hijos de Húrin</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+
+                <article>
+                    <img src="img/04.jpg" alt="Portada del libro: El Silmarillion">
+                    <h2>J.R.R. Tolkien</h2>
+                    <h3>El Silmarillion</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+
+                <article>
+                    <img src="img/05.jpg" alt="Portada del libro: Duna">
+                    <h2>Frank Herbert</h2>
+                    <h3>Duna</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+
+                <article>
+                    <img src="img/06.jpg" alt="Portada del libro: Esfera">
+                    <h2>Michael Crichton</h2>
+                    <h3>Esfera</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+
+                <article>
+                    <img src="img/07.jpg" alt="Portada del libro: Duna">
+                    <h2>Edgar Allan Poe</h2>
+                    <h3>Colección Completa de Poemas e Historias de Edgar Allan Poe</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+
+                <article>
+                    <img src="img/08.jpg" alt="Portada del libro: Duna">
+                    <h2>William Shakespeare</h2>
+                    <h3>Obra Completa de William Shakespeare</h3>
+                    <a class="link-novedades" href="">Ver más</a>
+                </article>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <ul>
+            <li>Av. Rivadavia 1755 - CABA</li>
+            <li><a target="_blank" href="https://api.whatsapp.com/send/?phone=+5491144446666&app_absent=0">011-4444-6666</a></li>
+            <li><a href="contacto.html">contacto@lalibreria.com.ar</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

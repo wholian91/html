@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <section id="ingreso">
+            <h1>Ingresar con mi usuario</h1>
+            <form class="formulario" action="" method="POST">
+
+                <label for="usuario">Mi usuario</label>
+                <input class="input" title="Tip: Podés usar el email con el que te registraste en nuestra página." type="text" id="usuario" placeholder="Mi usuario" name="usuario" required>
+
+                <label for="password">Mi contraseña</label>
+                <input class="input" type="password" placeholder="Mi contraseña" id="password" name="password" required>
+                
+                <button aria-label="Botón de ingreso al sitio">Ingresar</button>
+            </form>
+            <ul>
+                <li> <a class="form" href="">¿Olvidaste tu usuario/contraseña?</a></li>
+                <li> <a class="form" href="registro.html">Aún no tengo usuario, quiero registrarme</a></li>
+            </ul>
+        </section>
+
+
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <form class="formulario" action="" method="" enctype="text/plain">
+
+                <label for="nombre">Nombre</label>
+                <input class="input" type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamás?" required>
+                
+                <label for="email">Email</label>
+                <input class="input" type="email" name="email" placeholder="Dejanos tu email así podemos responderte pronto" required>
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" required></textarea>
+
+                <label>
+                    ¿Te gustaría recibir novedades por email?
+                    <input type="radio" name="newsletter" value="si" checked> Si
+                    <input type="radio" name="newsletter" value="no"> No
+                </label>
+
+                <label>
+                    Antes de continuar, ¿aceptás nuestros términos y condiciones? <input type="checkbox" name="acepta" value="acepta" required> Si, acepto los términos y condiciones.
+                </label>
+
+                <button>Enviar</button>
+            </form>
+        </section>
+
+        <section id="registro">
+            <h1>Quiero registrarme en <strong>La Librería</strong></h1>
+            <form class="formulario" action="" method="POST" enctype="multipart/form-data">
+
+                <label for="usuario">Nombre</label>
+                <input class="input" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+
+                <label for="apellido">Apellido</label>
+                <input class="input" type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido">
+
+                <label for="email">email</label>
+                <input class="input" type="email" id="email" name="email" placeholder="email@dominio.com" required>
+
+                <label for="password">Mi contraseña</label>
+                <input class="input" type="password" id="password" name="password" placeholder="Mi contraseña" required>
+
+                <label for="checkPassword">Confirmar contraseña</label>
+                <input class="input" type="password" id="checkPassword" name="checkPassword" placeholder="Volvé a escribir tu contraseña" required>
+
+                <label for="avatar">Mi avatar</label>
+                <input type="file" title="Si querés, podés elegir tu foto para tu perfil" id="avatar" name="avatar" >
+
+                <label for="provincia">Provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="Ciudad de Buenos Aires" selected>Ciudad de Buenos Aires</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucuman">Tucuman</option>
+                </select>
+
+                <label>¿Acepta los términos y condiciones?
+                    <input id="terminos" name="terminos" type="checkbox" value="acepta" required> Si, acepto los términos y condiciones.
+                </label>
+                
+                <button>Registrarme</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
